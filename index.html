@@ -1,0 +1,675 @@
+```html
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>9-sinf — Axborot texnologiyasining bandlikka ta'siri</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #f3e5f5);
+    color: #222;
+}
+
+header {
+    background: linear-gradient(135deg, #1565c0, #6a1b9a);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    margin: 0 0 12px;
+    font-size: 30px;
+}
+
+header p {
+    margin: 7px;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+.card {
+    background: white;
+    margin-bottom: 22px;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #1565c0;
+}
+
+.old-topic {
+    border-left: 6px solid #6a1b9a;
+}
+
+.today {
+    border-left: 6px solid #1565c0;
+}
+
+.goal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.goal div {
+    background: #f5f5f5;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.technology {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+}
+
+.technology div {
+    padding: 20px;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+.technology h3 {
+    color: #6a1b9a;
+    margin-top: 0;
+}
+
+.positive {
+    border-left: 6px solid #2e7d32;
+    background: #e8f5e9;
+}
+
+.negative {
+    border-left: 6px solid #c62828;
+    background: #ffebee;
+}
+
+.practice {
+    border-left: 6px solid #ef6c00;
+    background: #fff3e0;
+}
+
+.question {
+    background: #f5f5f5;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 12px;
+}
+
+button {
+    background: #1565c0;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0d47a1;
+}
+
+.result {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.conclusion {
+    text-align: center;
+    background: linear-gradient(135deg, #ede7f6, #e3f2fd);
+}
+
+footer {
+    background: #263238;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.back {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #6a1b9a;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+li {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 23px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>9-sinf Informatika va axborot texnologiyalari</h1>
+    <p>Bugungi dars</p>
+    <p><strong>Axborot texnologiyasining bandlikka ta'siri</strong></p>
+</header>
+
+
+<div class="container">
+
+    <!-- O'TILGAN MAVZU -->
+    <div class="card old-topic">
+        <h2>📚 O‘tilgan mavzu</h2>
+
+        <p>
+            <strong>Tarmoq muammolari va kommunikatsiya</strong>
+        </p>
+
+        <p>
+            O‘tgan darsda kompyuter tarmoqlarida uchrashi mumkin
+            bo‘lgan muammolar, aloqa vositalari va tarmoq orqali
+            ma’lumot almashish jarayonlari haqida o‘rganildi.
+        </p>
+    </div>
+
+
+    <!-- BUGUNGI MAVZU -->
+    <div class="card today">
+        <h2>🎯 Bugungi mavzu</h2>
+
+        <p>
+            <strong>
+                Axborot texnologiyasining bandlikka ta'siri
+            </strong>
+        </p>
+
+        <p>
+            Axborot texnologiyalari mehnat faoliyatining ko‘plab
+            sohalarini o‘zgartirmoqda. Ayrim yangi kasblar paydo
+            bo‘lsa, ayrim ishlarning bajarilish usullari
+            avtomatlashtirilmoqda.
+        </p>
+    </div>
+
+
+    <!-- MAQSAD -->
+    <div class="card">
+        <h2>🎯 Dars maqsadi</h2>
+
+        <div class="goal">
+
+            <div>
+                💻
+                <h3>Texnologiya</h3>
+                <p>
+                    Axborot texnologiyalarining mehnat jarayonidagi
+                    o‘rnini tushunish.
+                </p>
+            </div>
+
+            <div>
+                👨‍💻
+                <h3>Yangi kasblar</h3>
+                <p>
+                    IT sohasi bilan bog‘liq yangi kasblarni bilish.
+                </p>
+            </div>
+
+            <div>
+                🤖
+                <h3>Avtomatlashtirish</h3>
+                <p>
+                    Ayrim ishlarning avtomatlashtirilishini tushunish.
+                </p>
+            </div>
+
+            <div>
+                📚
+                <h3>Yangi ko‘nikmalar</h3>
+                <p>
+                    Kelajak kasblari uchun zarur ko‘nikmalarni
+                    aniqlash.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ASOSIY TUSHUNCHALAR -->
+    <div class="card">
+        <h2>💡 Axborot texnologiyalari va bandlik</h2>
+
+        <div class="technology">
+
+            <div>
+                <h3>👨‍💻 Yangi kasblar</h3>
+                <p>
+                    Dasturchi, web-dizayner, ma'lumotlar tahlilchisi,
+                    kiberxavfsizlik mutaxassisi kabi kasblarga
+                    ehtiyoj ortmoqda.
+                </p>
+            </div>
+
+            <div>
+                <h3>🤖 Avtomatlashtirish</h3>
+                <p>
+                    Kompyuter va avtomatik tizimlar ayrim
+                    takroriy ishlarni tez va aniq bajarishi mumkin.
+                </p>
+            </div>
+
+            <div>
+                <h3>🌐 Masofaviy ish</h3>
+                <p>
+                    Internet yordamida ayrim ishlarni boshqa
+                    joydan turib bajarish imkoniyati paydo bo‘ldi.
+                </p>
+            </div>
+
+            <div>
+                <h3>📚 Qayta o‘qish</h3>
+                <p>
+                    Texnologiyalar rivojlangani sari yangi
+                    bilim va ko‘nikmalarni o‘rganish muhim.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- IJOBIY TA'SIR -->
+    <div class="card positive">
+
+        <h2>✅ Axborot texnologiyalarining ijobiy ta'siri</h2>
+
+        <ul>
+            <li>Yangi kasb va ish o‘rinlari paydo bo‘ladi.</li>
+            <li>Masofadan ishlash imkoniyati kengayadi.</li>
+            <li>Mehnat unumdorligi oshadi.</li>
+            <li>Ma'lumotlarni tez qayta ishlash imkoniyati paydo bo‘ladi.</li>
+            <li>Yangi bilim va ko‘nikmalarni egallash imkoniyati oshadi.</li>
+        </ul>
+
+    </div>
+
+
+    <!-- MUAMMOLAR -->
+    <div class="card negative">
+
+        <h2>⚠️ Mumkin bo‘lgan muammolar</h2>
+
+        <ul>
+            <li>Ayrim takroriy ishlar avtomatlashtirilishi mumkin.</li>
+            <li>Ba'zi kasblar yangi texnologiyalar ta'sirida o‘zgarishi mumkin.</li>
+            <li>Yangi dastur va texnologiyalarni o‘rganish zarur bo‘ladi.</li>
+            <li>Raqamli ko‘nikmalarga bo‘lgan talab ortadi.</li>
+        </ul>
+
+    </div>
+
+
+    <!-- KELAJAK KASBLARI -->
+    <div class="card">
+
+        <h2>🚀 Kelajak uchun muhim kasblar</h2>
+
+        <div class="technology">
+
+            <div>
+                <h3>💻 Dasturchi</h3>
+                <p>Dastur va ilovalar yaratadi.</p>
+            </div>
+
+            <div>
+                <h3>🌐 Web-dizayner</h3>
+                <p>Veb-saytlarning ko‘rinishi va dizaynini yaratadi.</p>
+            </div>
+
+            <div>
+                <h3>🔐 Kiberxavfsizlik mutaxassisi</h3>
+                <p>Axborot va tizimlarni himoya qilish bilan shug‘ullanadi.</p>
+            </div>
+
+            <div>
+                <h3>🤖 AI mutaxassisi</h3>
+                <p>Sun'iy intellekt texnologiyalari bilan ishlaydi.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- AMALIY TOPSHIRIQ -->
+    <div class="card practice">
+
+        <h2>💻 Amaliy mashg‘ulot</h2>
+
+        <p>
+            Quyidagi topshiriqlarni bajaring:
+        </p>
+
+        <ol>
+
+            <li>
+                Internetdan axborot texnologiyalari bilan bog‘liq
+                5 ta kasb haqida ma'lumot toping.
+            </li>
+
+            <li>
+                Ushbu kasblarning vazifalarini qisqacha yozing.
+            </li>
+
+            <li>
+                Texnologiyalar qaysi ishlarni avtomatlashtirishi
+                mumkinligi haqida 3 ta misol keltiring.
+            </li>
+
+            <li>
+                Kelajakda qaysi kasbni egallashni xohlashingizni
+                va nima uchunligini yozing.
+            </li>
+
+        </ol>
+
+    </div>
+
+
+    <!-- MUHOKAMA -->
+    <div class="card">
+
+        <h2>💬 Muhokama uchun savollar</h2>
+
+        <ol>
+
+            <li>
+                Axborot texnologiyalari yangi ish o‘rinlarini
+                qanday yaratadi?
+            </li>
+
+            <li>
+                Nima uchun zamonaviy xodim yangi texnologiyalarni
+                o‘rganib borishi kerak?
+            </li>
+
+            <li>
+                Sun'iy intellekt kelajakdagi kasblarga qanday
+                ta'sir qilishi mumkin?
+            </li>
+
+            <li>
+                Siz kelajakda qaysi IT kasbini tanlagan bo‘lardingiz?
+            </li>
+
+        </ol>
+
+    </div>
+
+
+    <!-- TEST -->
+    <div class="card">
+
+        <h2>🧠 Mini test</h2>
+
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    1. Axborot texnologiyalari natijasida nima paydo bo‘lishi mumkin?
+                </strong>
+            </p>
+
+            <label>
+                <input type="radio" name="q1" value="1">
+                Yangi kasblar
+            </label><br>
+
+            <label>
+                <input type="radio" name="q1" value="0">
+                Faqat eski kasblar
+            </label><br>
+
+            <label>
+                <input type="radio" name="q1" value="0">
+                Hech qanday o‘zgarish bo‘lmaydi
+            </label>
+
+        </div>
+
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    2. Masofaviy ish nima?
+                </strong>
+            </p>
+
+            <label>
+                <input type="radio" name="q2" value="1">
+                Internet orqali boshqa joydan turib ishlash
+            </label><br>
+
+            <label>
+                <input type="radio" name="q2" value="0">
+                Faqat maktabda ishlash
+            </label><br>
+
+            <label>
+                <input type="radio" name="q2" value="0">
+                Kompyutersiz ishlash
+            </label>
+
+        </div>
+
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    3. Dasturchi nima bilan shug‘ullanadi?
+                </strong>
+            </p>
+
+            <label>
+                <input type="radio" name="q3" value="1">
+                Dastur va ilovalar yaratadi
+            </label><br>
+
+            <label>
+                <input type="radio" name="q3" value="0">
+                Faqat kitob sotadi
+            </label><br>
+
+            <label>
+                <input type="radio" name="q3" value="0">
+                Faqat rasm chizadi
+            </label>
+
+        </div>
+
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    4. Texnologiyalar rivojlanganda nima qilish muhim?
+                </strong>
+            </p>
+
+            <label>
+                <input type="radio" name="q4" value="1">
+                Yangi bilim va ko‘nikmalarni o‘rganish
+            </label><br>
+
+            <label>
+                <input type="radio" name="q4" value="0">
+                O‘rganishni to‘xtatish
+            </label><br>
+
+            <label>
+                <input type="radio" name="q4" value="0">
+                Texnologiyalardan foydalanmaslik
+            </label>
+
+        </div>
+
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    5. Kiberxavfsizlik mutaxassisi nima qiladi?
+                </strong>
+            </p>
+
+            <label>
+                <input type="radio" name="q5" value="1">
+                Axborot va tizimlarni himoya qiladi
+            </label><br>
+
+            <label>
+                <input type="radio" name="q5" value="0">
+                Faqat musiqa tinglaydi
+            </label><br>
+
+            <label>
+                <input type="radio" name="q5" value="0">
+                Faqat matn yozadi
+            </label>
+
+        </div>
+
+
+        <button onclick="checkTest()">
+            Natijani ko‘rish
+        </button>
+
+        <div id="result" class="result"></div>
+
+    </div>
+
+
+    <!-- XULOSA -->
+    <div class="card conclusion">
+
+        <h2>🌟 Dars xulosasi</h2>
+
+        <p>
+            Axborot texnologiyalari mehnat bozorini o‘zgartirmoqda.
+            Yangi kasblar paydo bo‘lmoqda va zamonaviy kasblarda
+            raqamli ko‘nikmalarga ehtiyoj ortmoqda.
+        </p>
+
+        <p>
+            <strong>
+                Kelajak kasbini tanlashda bilim olish,
+                texnologiyalarni o‘rganish va doimiy rivojlanish muhim.
+            </strong>
+        </p>
+
+        <p>
+            🚀 <strong>“Bugungi bilim — ertangi kasb!”</strong>
+        </p>
+
+        <a href="#" class="back">
+            ⬅️ Oldingi mavzu
+        </a>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <p>
+        © 2026 Informatika va AT — Ikrom ustoz darslari
+    </p>
+
+    <p>
+        9-sinf | Axborot texnologiyasining bandlikka ta'siri
+    </p>
+
+</footer>
+
+
+<script>
+
+function checkTest() {
+
+    let score = 0;
+
+    for (let i = 1; i <= 5; i++) {
+
+        let answer = document.querySelector(
+            'input[name="q' + i + '"]:checked'
+        );
+
+        if (answer) {
+            score += Number(answer.value);
+        }
+    }
+
+    let result = document.getElementById("result");
+
+    if (score === 5) {
+
+        result.innerHTML =
+        "🎉 Ajoyib! Barcha javoblar to‘g‘ri. Natija: 5/5";
+
+    } else if (score >= 3) {
+
+        result.innerHTML =
+        "👍 Yaxshi! Natija: " + score +
+        "/5. Mavzuni yana bir bor takrorlang.";
+
+    } else {
+
+        result.innerHTML =
+        "📚 Natija: " + score +
+        "/5. Mavzuni qayta o‘rganib chiqing.";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
+```
